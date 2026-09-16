@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered University Knowledge Assistant | RAG & LLM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">AI-Powered University Knowledge Assistant</h1>
+                <p class="subtitle">RAG & LLM | MIT-ADT University, Pune, Maharashtra, India</p>
+            </div>
+        </header>
+
+        <!-- Student Context Section -->
+        <section class="context-section">
+            <h2 class="section-title">Student Context</h2>
+            <div class="context-grid">
+                <div class="context-field">
+                    <label for="program">Program</label>
+                    <select id="program" class="context-select">
+                        <option value="">Select Program</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                    </select>
+                </div>
+                <div class="context-field">
+                    <label for="branch">Branch</label>
+                    <select id="branch" class="context-select">
+                        <option value="">Select Branch</option>
+                        <option value="AI & Data Analytics">AI & Data Analytics</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </div>
+                <div class="context-field">
+                    <label for="year">Year</label>
+                    <select id="year" class="context-select">
+                        <option value="">Select Year</option>
+                        <option value="1st">1st Year</option>
+                        <option value="2nd">2nd Year</option>
+                        <option value="3rd">3rd Year</option>
+                        <option value="4th">4th Year</option>
+                    </select>
+                </div>
+                <div class="context-field">
+                    <label for="semester">Semester</label>
+                    <select id="semester" class="context-select">
+                        <option value="">Select Semester</option>
+                        <option value="1st">1st Semester</option>
+                        <option value="2nd">2nd Semester</option>
+                        <option value="3rd">3rd Semester</option>
+                        <option value="4th">4th Semester</option>
+                        <option value="5th">5th Semester</option>
+                        <option value="6th">6th Semester</option>
+                        <option value="7th">7th Semester</option>
+                        <option value="8th">8th Semester</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <h2 class="section-title">Quick Actions</h2>
+            <div class="action-chips">
+                <button class="action-chip" data-action="syllabus">Search Syllabus</button>
+                <button class="action-chip" data-action="pyqs">Find PYQs</button>
+                <button class="action-chip" data-action="notices">Search Notices</button>
+                <button class="action-chip" data-action="academic">Ask Academic Question</button>
+            </div>
+        </section>
+
+        <!-- Chat Interface -->
+        <section class="chat-section">
+            <h2 class="section-title">Ask a Question</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <p>Welcome! Ask me anything about MIT-ADT University syllabus, academics, notices, or previous-year question papers.</p>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="questionInput" 
+                        class="question-input" 
+                        placeholder="Type your question here..."
+                        autocomplete="off"
+                    >
+                    <button id="sendButton" class="send-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources Section -->
+        <section class="sources-section" id="sourcesSection" style="display: none;">
+            <h2 class="section-title">Sources</h2>
+            <div class="sources-list" id="sourcesList"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

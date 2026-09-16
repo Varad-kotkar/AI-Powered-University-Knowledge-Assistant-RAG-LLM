@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+langchain
+langchain-community
+langchain-text-splitters
+langgraph
+sentence-transformers
+pymongo
+python-dotenv
+pypdf
+langchain-groq
+numpy
