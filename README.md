@@ -14,7 +14,7 @@ Students often need to search through multiple academic documents, syllabus file
 
 ## Problem Statement
 
-MIT-ADT University students face challenges when searching for:
+ University students face challenges when searching for:
 - Syllabus information for specific subjects and semesters
 - Academic regulations and course structures
 - Examination notices and important deadlines
